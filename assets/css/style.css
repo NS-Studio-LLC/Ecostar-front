@@ -56,11 +56,14 @@ textarea {
 }
 
 header {
-  padding: 12px 30px;
-  background-color: lightgreen;
+  padding: 12px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
+}
+header .header-input-div {
+  flex-grow: 1;
 }
 header .logo {
   width: 176px;
@@ -72,4 +75,72 @@ header .logo img {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header nav a {
+  color: #111814;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+header .header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .header-actions .header-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  border-radius: 24px;
+  background: #F0F4F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-input-div {
+  padding: 11px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  background: #F0F4F2;
+}
+.header-input-div input {
+  flex-wrap: 1;
+  background-color: transparent;
+  color: #618972;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.whatsapp-button {
+  border-radius: 24px;
+  background: #009933;
+  box-shadow: 0 10px 15px -3px rgba(17, 212, 98, 0.2), 0 4px 6px -4px rgba(17, 212, 98, 0.2);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.whatsapp-button img {
+  width: 16px;
+  height: 16px;
+}
+.whatsapp-button span {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
 }/*# sourceMappingURL=style.css.map */
