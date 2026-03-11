@@ -15,6 +15,12 @@
 @use './ui/buttons/whatsappButton';
 @use './ui/buttons/btnGreen.scss';
 @use './ui/buttons/btnDownload';
+@use './ui/buttons/see-all';
+
+// (cards)
+@use './ui/cards/feature-card';
+@use './ui/cards/recently-product-card';
+@use './ui/cards/discounted-products';
 
 // pages
 @use './pages/index';

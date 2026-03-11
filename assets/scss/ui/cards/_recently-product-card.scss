@@ -1,0 +1,97 @@
+.recently-product-card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 32px;
+    border: 1px solid #F0F4F2;
+    background: #FFF;
+
+    .product-img {
+        height: 250px;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+
+        .favorite-icon {
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .product-infos {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+
+        .product-title {
+            color: #111814;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22.5px;
+        }
+
+        .product-size {
+            color: #618972;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+        .badget-new {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(17, 212, 98, 0.10);
+
+            span {
+                color: #11D462;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .product-price {
+            color: #111814;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        .shop-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            background: #F0F4F2;
+            border-radius: 50%;
+        }
+    }
+}

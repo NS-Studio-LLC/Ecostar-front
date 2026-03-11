@@ -5,7 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    background: rgba(255, 255, 255, 0.80);
+    background-color: #efefef;
 }
 
 .page-container {
@@ -50,9 +50,10 @@ textarea {
 }
 
 .section-title {
-    color: #000;
-    font-size: 32px;
+    color: #111814;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -0.75px;
 }
