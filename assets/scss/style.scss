@@ -21,6 +21,11 @@
 @use './ui/cards/feature-card';
 @use './ui/cards/recently-product-card';
 @use './ui/cards/discounted-products';
+@use './ui/cards/popular-product-card';
+@use './ui/cards/subscribe-card';
+
+// (swiper)
+@use './ui/swiper/productSwiper.scss';
 
 // pages
 @use './pages/index';

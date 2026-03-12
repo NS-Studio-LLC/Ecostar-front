@@ -1,0 +1,83 @@
+.subscribe-card {
+    padding: 48px;
+    border-radius: 24px;
+    border: 1px solid rgba(240, 244, 242, 0.10);
+    background: #111814;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    .card-intro {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 50%;
+
+        .card-title {
+            color: #FFF;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+        }
+
+        .card-description {
+            color: #9CA3AF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+
+    .card-form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 50%;
+
+        .form {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            input {
+                padding: 15px 20px;
+                color: #9CA3AF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                flex-grow: 1;
+
+                border-radius: 24px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                background: rgba(255, 255, 255, 0.10);
+            }
+
+            .subscribe-button {
+                padding: 15px 32px;
+                border-radius: 24px;
+                background: #11D462;
+
+                color: #FFF;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+
+        .form-warning {
+            color: #6B7280;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+
+    }
+}
