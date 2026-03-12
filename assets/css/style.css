@@ -175,6 +175,13 @@ footer .contact {
   flex-direction: column;
   gap: 16px;
 }
+footer .contact .contact-title {
+  color: #111814;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
 footer .contact .contact-info {
   display: flex;
   align-items: center;
@@ -229,6 +236,33 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  background-color: #fff;
+  border-top: 1px solid #F0F4F2;
+}
+.bottom-bar .copyright {
+  color: #618972;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.bottom-bar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.bottom-bar-links a {
+  color: #618972;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .header-input-div {

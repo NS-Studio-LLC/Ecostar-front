@@ -1,0 +1,31 @@
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: #fff;
+    border-top: 1px solid #F0F4F2;
+
+    .copyright {
+        color: #618972;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        a {
+            color: #618972;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+
+
+}

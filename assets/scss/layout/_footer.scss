@@ -75,6 +75,14 @@ footer {
         flex-direction: column;
         gap: 16px;
 
+        .contact-title {
+            color: #111814;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
         .contact-info {
             display: flex;
             align-items: center;
