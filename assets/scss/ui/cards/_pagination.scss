@@ -1,0 +1,73 @@
+// Dəyişənlər (Rənglər şəkildən vizual olaraq seçilib)
+$primary-green: #10d068;
+$text-dark: #4a5568;
+$text-light: #a0aec0;
+$border-color: #e2e8f0;
+$bg-hover: #f7fafc;
+$shadow-green: rgba(16, 208, 104, 0.35);
+
+.pagination {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+
+    li {
+        display: flex;
+    }
+
+    .page-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        text-decoration: none;
+        color: $text-dark;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: transparent;
+        border: 1.5px solid $border-color;
+        border-radius: 14px;
+        transition: all 0.2s ease-in-out;
+
+        // Hover effekti (aktiv olmayanlar üçün)
+        &:hover:not(.active) {
+            background-color: $bg-hover;
+            border-color: darken($border-color, 10%);
+        }
+
+        // Aktiv (Seçilmiş) Səhifə
+        &.active {
+            background-color: $primary-green;
+            color: #ffffff;
+            border-color: $primary-green;
+            box-shadow: 0 8px 16px -4px $shadow-green; // Yaşıl kölgə effekti
+        }
+
+        // İkon rənglərini mətnlə eyniləşdirmək üçün
+        svg {
+            color: #64748b;
+        }
+
+        &:hover:not(.active) svg {
+            color: $text-dark;
+        }
+    }
+
+    // Çox nöqtə (Ellipsis) stili
+    .ellipsis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 42px;
+        color: $text-light;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 1;
+        padding-bottom: 6px; // Nöqtələri mərkəzə doğru bir az yuxarı qaldırmaq üçün
+    }
+}

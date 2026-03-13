@@ -24,6 +24,11 @@
 @use './ui/cards/discounted-products';
 @use './ui/cards/popular-product-card';
 @use './ui/cards/subscribe-card';
+@use './ui/cards/listed-product-card';
+@use './ui/cards/pagination';
+
+// (accordions)
+@use './ui/accordions/filter-accordion';
 
 // (swiper)
 @use './ui/swiper/productSwiper.scss';

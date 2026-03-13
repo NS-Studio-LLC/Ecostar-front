@@ -48,15 +48,20 @@
         gap: 32px;
 
         .product-filter {
-            width: 35%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .line {
+                height: 1px;
+                background: #E2E8F0;
+            }
 
             .filter-type {
                 display: flex;
                 flex-direction: column;
-                gap: 12px;
-                max-height: 200px;
-                overflow-y: scroll;
-                background-color: red;
+                gap: 15px;
 
                 .type-title {
                     margin-bottom: 3px;
@@ -67,20 +72,45 @@
                     line-height: 28px;
                 }
 
-                .filter-input-div {
+                .form-range {
+                    height: 0;
+                }
+
+                .filter-inputs {
                     display: flex;
-                    align-items: center;
+                    flex-direction: column;
                     gap: 12px;
 
-                    input {
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 8px;
-                        border: 1px solid #D1D5DB;
-                        background: #FFF;
+                    .filter-input-div {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+
+                        input {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 8px;
+                            border: 1px solid #D1D5DB;
+                            background: #FFF;
+                        }
+
+                        label {
+                            color: #475569;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 20px;
+                        }
                     }
 
-                    label {
+                }
+
+                .ranges {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span {
                         color: #475569;
                         font-size: 14px;
                         font-style: normal;
@@ -91,5 +121,75 @@
 
             }
         }
+
+        .product-list {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            &-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .product-count {
+                    color: #0F172A;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+
+                .sort {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .label {
+                        color: #64748B;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px;
+                    }
+
+                    .select-div {
+                        border-radius: 24px;
+                        border: 2px solid #E2E8F0;
+                        background: #FFF;
+                        padding: 10px;
+                        min-width: 192px;
+                        cursor: pointer;
+
+                        select {
+                            color: #0F172A;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 20px;
+                            width: 100%;
+                        }
+
+                    }
+                }
+
+            }
+
+            &-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+
+                .product-cards {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                    gap: 24px;
+                    width: 100%;
+                }
+            }
+        }
+
     }
 }

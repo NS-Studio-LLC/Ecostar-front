@@ -1,0 +1,43 @@
+.filter-accordion {
+
+    .accordion-item {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .accordion-button {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            transition: all 0.2s ease-in;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &:focus {
+            box-shadow: none;
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+    .accordion-body{
+        padding: 0;
+    }
+
+    .collapsed {
+        img {
+            transform: rotate(-180deg);
+        }
+    }
+}

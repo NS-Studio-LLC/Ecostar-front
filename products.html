@@ -75,52 +75,351 @@
 
         <!-- products start -->
         <div class="products-container">
+
+            <!-- filter start -->
             <div class="product-filter">
 
                 <div class="filter-type">
-                    <span class="type-title">Kateqoriya</span>
 
-                    <div class="filter-input-div">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bütün Məhsullar</label>
+                    <div class="accordion filter-accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#category" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <span class="type-title">Kateqoriya</span>
+                                <img src="assets/icons/accordion-arrow.svg" alt="">
+                            </button>
+                            <div id="category" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="filter-inputs">
+
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Bütün Məhsullar</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Kraft Qutular</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Kağız Çantalar</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Birdəfəlik Qablar</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Bio Plastik</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">filtet example</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="filter-input-div">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bütün Məhsullar</label>
+
+                </div>
+
+                <div class="line"></div>
+
+                <div class="filter-type">
+
+                    <div class="accordion filter-accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#material" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <span class="type-title">Material</span>
+                                <img src="assets/icons/accordion-arrow.svg" alt="">
+                            </button>
+                            <div id="material" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="filter-inputs">
+
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Bütün Məhsullar</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Kraft Qutular</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Kağız Çantalar</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Birdəfəlik Qablar</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Bio Plastik</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">filtet example</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="filter-input-div">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bütün Məhsullar</label>
+
+                </div>
+
+                <div class="line"></div>
+
+                <div class="filter-type">
+
+                    <div class="accordion filter-accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#range" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                <span class="type-title">Qiymət Aralığı (AZN)</span>
+                                <img src="assets/icons/accordion-arrow.svg" alt="">
+                            </button>
+                            <div id="range" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <input type="range" class="form-range" id="range1">
+
+                                    <div class="ranges">
+                                        <span>0 ₼</span>
+                                        <span>50+ ₼</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="filter-input-div">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bütün Məhsullar</label>
+
+                </div>
+
+                <div class="line"></div>
+
+                <div class="filter-type">
+
+                    <div class="accordion filter-accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#availability" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <span class="type-title">Mövcudluq</span>
+                                <img src="assets/icons/accordion-arrow.svg" alt="">
+                            </button>
+                            <div id="availability" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="filter-inputs">
+
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Stokda var</label>
+                                        </div>
+                                        <div class="filter-input-div">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">Sifarişlə</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="filter-input-div">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bütün Məhsullar</label>
-                    </div>
-                    <div class="filter-input-div">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bütün Məhsullar</label>
-                    </div>
-                    <div class="filter-input-div">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bütün Məhsullar</label>
-                    </div>
-                    <div class="filter-input-div">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bütün Məhsullar</label>
+
+                </div>
+
+
+            </div>
+            <!-- filter end -->
+
+            <div class="product-list">
+                <div class="product-list-header">
+                    <span class="product-count">125 məhsul tapıldı</span>
+
+                    <div class="sort">
+                        <span class="label">Sırala:</span>
+
+                        <div class="select-div">
+                            <select name="" id="">
+                                <option value="">Ən yenilər</option>
+                                <option value="">Öncə ucuz</option>
+                                <option value="">Öncə baha</option>
+                            </select>
+                        </div>
+
                     </div>
                 </div>
 
-            </div>
-            <div class="products-list">
+                <div class="product-list-body">
 
+                    <div class="product-cards">
+
+                        <div class="listed-product-card">
+                            <div class="product-image">
+                                <img src="assets/images/p-img2.jpg" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <span class="category">Kraft Qutular</span>
+                                <span class="product-name">Eko-Dost Burger Qutusu</span>
+                                <span class="product-description">100% Təkrar emal olunan</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <span class="product-price">
+                                    0.55 ₼ <span>/ ədəd</span>
+                                </span>
+                                <button class="btn-add">
+                                    <img src="assets/icons/plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="listed-product-card">
+                            <div class="product-image">
+                                <img src="assets/images/p-img2.jpg" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <span class="category">Kraft Qutular</span>
+                                <span class="product-name">Eko-Dost Burger Qutusu</span>
+                                <span class="product-description">100% Təkrar emal olunan</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <span class="product-price">
+                                    0.55 ₼ <span>/ ədəd</span>
+                                </span>
+                                <button class="btn-add">
+                                    <img src="assets/icons/plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="listed-product-card">
+                            <div class="product-image">
+                                <img src="assets/images/p-img2.jpg" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <span class="category">Kraft Qutular</span>
+                                <span class="product-name">Eko-Dost Burger Qutusu</span>
+                                <span class="product-description">100% Təkrar emal olunan</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <span class="product-price">
+                                    0.55 ₼ <span>/ ədəd</span>
+                                </span>
+                                <button class="btn-add">
+                                    <img src="assets/icons/plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="listed-product-card">
+                            <div class="product-image">
+                                <img src="assets/images/p-img2.jpg" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <span class="category">Kraft Qutular</span>
+                                <span class="product-name">Eko-Dost Burger Qutusu</span>
+                                <span class="product-description">100% Təkrar emal olunan</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <span class="product-price">
+                                    0.55 ₼ <span>/ ədəd</span>
+                                </span>
+                                <button class="btn-add">
+                                    <img src="assets/icons/plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="listed-product-card">
+                            <div class="product-image">
+                                <img src="assets/images/p-img2.jpg" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <span class="category">Kraft Qutular</span>
+                                <span class="product-name">Eko-Dost Burger Qutusu</span>
+                                <span class="product-description">100% Təkrar emal olunan</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <span class="product-price">
+                                    0.55 ₼ <span>/ ədəd</span>
+                                </span>
+                                <button class="btn-add">
+                                    <img src="assets/icons/plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="listed-product-card">
+                            <div class="product-image">
+                                <img src="assets/images/p-img2.jpg" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <span class="category">Kraft Qutular</span>
+                                <span class="product-name">Eko-Dost Burger Qutusu</span>
+                                <span class="product-description">100% Təkrar emal olunan</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <span class="product-price">
+                                    0.55 ₼ <span>/ ədəd</span>
+                                </span>
+                                <button class="btn-add">
+                                    <img src="assets/icons/plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" class="page-link prev">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li><a href="#" class="page-link active">1</a></li>
+                        <li><a href="#" class="page-link">2</a></li>
+                        <li><a href="#" class="page-link">3</a></li>
+
+                        <li><span class="ellipsis">...</span></li>
+
+                        <li><a href="#" class="page-link">8</a></li>
+
+                        <li>
+                            <a href="#" class="page-link next">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
+
         </div>
         <!-- products end -->
-
 
     </div>
 
