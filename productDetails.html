@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Təməl viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Zoom meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ecostar</title>
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+
+        <div class="header-input-div">
+            <img src="assets/icons/search.svg" alt="">
+
+            <input type="text" placeholder="Məhsulları axtar...">
+        </div>
+
+        <nav>
+            <a href="index.html">Ana Səhifə</a>
+            <a href="products.html">Məhsullar</a>
+            <a href="about.html">Haqqımızda</a>
+            <a href="innovations.html">Yeniliklər</a>
+            <a href="contact.html">Əlaqə</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="whatsapp-button">
+                <img src="assets/icons/message.svg" alt="">
+                <span>WhatsApp</span>
+            </button>
+
+            <a href="" class="header-btn">
+                <img src="assets/icons/shop.svg" alt="">
+            </a>
+
+            <a href="" class="header-btn">
+                <img src="assets/icons/person.svg" alt="">
+            </a>
+
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    <div class="page-container product-details-page">
+
+        <!-- breadcrumb start -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="">Qida Qablaşdırması</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+        <!-- breadcrumb start -->
+
+        <div class="product-details">
+
+            <div class="product-meta">
+
+                <!-- fotorama start -->
+                <div class="fotorama-container">
+
+                    <!-- fotorama -->
+                    <div class="fotorama-wrapper">
+
+                        <div class="fotorama position-relative">
+
+                            <div class="stage position-relative">
+
+                                <div class="swiper fotoramaSwiper" id="mainSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/p-img.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/p-img4.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/bedroom.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/bedroom.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/bedroom.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/bedroom.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/bedroom.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/bedroom.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+
+                                <button class="fullscreen-open" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <img src="assets/icons/fotorama-open.svg" alt="">
+                                </button>
+
+                                <div class="pagination">
+                                    <div></div>
+                                </div>
+
+                            </div>
+
+                            <div class="thumbs-container" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="swiper mainThumbsSwiper">
+
+                                    <div class="swiper-wrapper thumbs">
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img active">
+                                                <img src="assets/images/combii.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img position-relative">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="thumbs-img">
+                                                <img src="assets/images/bedroom.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="overlay position-absolute">+12 şəkil</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- fotorama modal -->
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+
+                                <div class="fotorama">
+
+                                    <div class="stage">
+
+                                        <div class="swiper fotoramaSwiper" id="modalSwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="assets/images/bedroom.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="assets/images/bedroom.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="assets/images/bedroom.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="assets/images/bedroom.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="assets/images/bedroom.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="assets/images/bedroom.jpg" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="thumbs">
+                                        <div class="swiper thumbSwiper">
+                                            <div class="swiper-wrapper">
+
+                                                <div class="swiper-slide active">
+                                                    <img src="./assets/icons/e2.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/pexels-ben-iwara-1033992193-29637182.jpg"
+                                                        alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e4.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e5.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e6.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e7.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e8.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e9.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e10.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e11.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e12.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e13.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e14.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e15.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e16.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e17.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e18.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e19.jpg" alt="">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/icons/e20.jpg" alt="">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <button class="fullscreen-close" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <img src="assets/icons/fotorama-close.svg" alt="">
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fotorama end -->
+
+                <div class="product-infos">
+
+                    <div class="stock">
+                        <img src="assets/icons/check-green-gear.svg" alt="">
+
+                        <span>Stokda var</span>
+                    </div>
+
+                    <span class="product-code">Kod: ECO-2024-K01</span>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <!-- footer start -->
+    <footer>
+
+        <div class="footer-intro">
+
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+
+            <p class="intro-description">
+                Biznesiniz üçün keyfiyyətli və təbiət
+                dostu qablaşdırma məhsullarının
+                etibarlı təchizatçısı.
+            </p>
+
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <img src="assets/icons/world-icon.svg" alt="">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="assets/icons/fotograf-icon.svg" alt="">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="assets/icons/triangle-icon.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="pages">
+            <span class="pages-title">Səhifələr</span>
+
+            <a href="index.html">Ana səhifə</a>
+            <a href="products.html">Məhsullar</a>
+            <a href="about.html">Haqqımızda</a>
+            <a href="innovations.html">Yeniliklər</a>
+            <a href="contact.html">Əlaqə</a>
+        </div>
+
+        <div class="contact">
+
+            <span class="contact-title">Əlaqə</span>
+
+            <div class="contact-info">
+                <img src="assets/icons/location-green.svg" alt="">
+                <span>
+                    Bakı ş., Nərimanov r-nu, Əhməd
+                    Rəcəbli küç. 156
+                </span>
+            </div>
+
+            <div class="contact-info">
+                <img src="assets/icons/phone-green.svg" alt="">
+                <span>
+                    +994 50 123 45 67
+                </span>
+            </div>
+
+            <div class="contact-info">
+                <img src="assets/icons/letter-green.svg" alt="">
+                <span>
+                    info@eco-star.az
+                </span>
+            </div>
+
+        </div>
+
+        <div class="hours">
+            <span class="hours-title">İş saatları</span>
+
+            <div class="hour-info">
+                <span class="label">B.e - C.</span>
+                <span class="value">09:00 - 18:00</span>
+            </div>
+
+            <div class="hour-info">
+                <span class="label">Şənbə</span>
+                <span class="value">10:00 - 15:00</span>
+            </div>
+
+            <div class="hour-info">
+                <span class="label">Bazar</span>
+                <span class="value-danger">Bağlıdır</span>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+
+    <!-- bottom bar start -->
+    <div class="bottom-bar">
+        <span class="copyright">
+            © 2026 ECOSTAR. Bütün hüquqlar qorunur.
+        </span>
+
+        <div class="bottom-bar-links">
+            <a href="" class="privacy">Məxfilik siyasəti</a>
+            <a href="">İstifadə şərtləri</a>
+        </div>
+    </div>
+    <!-- bottom bar end -->
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/fotorama.js"></script>
+</body>
+
+</html>
