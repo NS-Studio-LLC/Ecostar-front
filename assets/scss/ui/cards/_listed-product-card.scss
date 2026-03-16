@@ -10,6 +10,30 @@
         height: 125px;
         border-radius: 24px;
         overflow: hidden;
+        position: relative;
+
+        .badget {
+            border-radius: 24px;
+            background: #11D462;
+            padding: 4px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                color: #FFF;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: 0.25px;
+                text-transform: uppercase;
+            }
+        }
 
         img {
             object-fit: cover;

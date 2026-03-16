@@ -5,6 +5,27 @@
 
     .product-image {
         height: 290px;
+        position: relative;
+
+        .badget {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            border-radius: 8px;
+            background: #EF4444;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 15px;
+            }
+        }
 
         img {
             object-fit: cover;

@@ -20,7 +20,7 @@
 @use './ui/buttons/see-all';
 
 // (cards)
-@use './ui/cards/feature-card';
+@use './ui/cards/homepage-feature-card';
 @use './ui/cards/recently-product-card';
 @use './ui/cards/discounted-products';
 @use './ui/cards/popular-product-card';
@@ -28,6 +28,7 @@
 @use './ui/cards/listed-product-card';
 @use './ui/cards/pagination';
 @use './ui/cards/similar-product-card';
+@use './ui/cards/feature-card';
 
 // (accordions)
 @use './ui/accordions/filter-accordion';
@@ -42,3 +43,4 @@
 @use './pages/index';
 @use './pages/products';
 @use './pages/product-details.scss';
+@use './pages/contact-us';
