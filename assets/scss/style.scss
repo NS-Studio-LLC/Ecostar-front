@@ -8,16 +8,20 @@
 @use './layout/footer';
 @use './layout/bottom-bar';
 @use './layout/breadcrumb';
+@use './layout/page-head';
 
 // ui
 // (inputs)
 @use './ui/inputs/headerInput';
+@use './ui/inputs/nav-searchbar';
 
 // (buttons)
 @use './ui/buttons/whatsappButton';
 @use './ui/buttons/btnGreen.scss';
 @use './ui/buttons/btnDownload';
 @use './ui/buttons/see-all';
+@use './ui/buttons/contact-btn';
+@use './ui/buttons/copy-button';
 
 // (cards)
 @use './ui/cards/homepage-feature-card';
@@ -29,9 +33,15 @@
 @use './ui/cards/pagination';
 @use './ui/cards/similar-product-card';
 @use './ui/cards/feature-card';
+@use './ui/cards/download-catalogue-card';
+@use './ui/cards/blog-card';
+@use './ui/cards/blog-subscibe-card';
 
 // (accordions)
 @use './ui/accordions/filter-accordion';
+
+// (tabs)
+@use './ui/tabs/innovations-tab';
 
 // (swiper)
 @use './ui/swiper/productSwiper.scss';
@@ -43,4 +53,6 @@
 @use './pages/index';
 @use './pages/products';
 @use './pages/product-details.scss';
-@use './pages/contact-us';
+@use './pages/about-us';
+@use './pages/innovations';
+@use './pages/blog-details';

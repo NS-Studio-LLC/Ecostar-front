@@ -1,0 +1,23 @@
+.nav-searchbar {
+    padding: 10px 16px;
+    border-radius: 24px;
+    border: 1px solid #E5E7EB;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+
+    input {
+        color: #618972;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

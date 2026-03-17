@@ -1,0 +1,52 @@
+.blog-subscribe-card {
+    border-radius: 24px;
+    background: #11D462;
+    box-shadow: 0 10px 15px -3px rgba(17, 212, 98, 0.20), 0 4px 6px -4px rgba(17, 212, 98, 0.20);
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .card-title {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .card-description {
+        color: rgba(255, 255, 255, 0.90);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    input {
+        padding: 8px 16px;
+        border-radius: 16px;
+        background: #FFF;
+        color: #6B7280;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .btn-subscribe {
+        border-radius: 16px;
+        background: rgba(0, 0, 0, 0.20);
+        padding: 8px 0;
+
+        span {
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+}

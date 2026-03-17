@@ -213,4 +213,43 @@
         }
 
     }
+
+    .download-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        background: #F6F8F7;
+        padding: 80px 130px;
+
+        .download-catalogue-card {
+            width: 100%;
+        }
+
+        .certificates {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            .certificate {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                span {
+                    color: #0F172A;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+            }
+        }
+
+    }
 }

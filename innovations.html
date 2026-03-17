@@ -1,11 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Təməl viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Zoom meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ecostar</title>
 </head>
+
 <body>
-    
+
+    <!-- header start -->
+    <header>
+
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+
+        <div class="header-input-div">
+            <img src="assets/icons/search.svg" alt="">
+
+            <input type="text" placeholder="Məhsulları axtar...">
+        </div>
+
+        <nav>
+            <a href="index.html">Ana Səhifə</a>
+            <a href="products.html">Məhsullar</a>
+            <a href="about.html">Haqqımızda</a>
+            <a href="innovations.html">Yeniliklər</a>
+            <a href="contact.html">Əlaqə</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="whatsapp-button">
+                <img src="assets/icons/message.svg" alt="">
+                <span>WhatsApp</span>
+            </button>
+
+            <a href="" class="header-btn">
+                <img src="assets/icons/shop.svg" alt="">
+            </a>
+
+            <a href="" class="header-btn">
+                <img src="assets/icons/person.svg" alt="">
+            </a>
+
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    <div class="page-container innovations-page-container">
+
+        <div class="page-head">
+            <h1>Yeniliklər</h1>
+            <p class="head-description">
+                Ekoloji qablaşdırma texnologiyaları, sənaye yenilikləri və şirkət xəbərləri haqqında
+                ən son məlumatlar.
+            </p>
+        </div>
+
+        <!-- tabs start -->
+
+        <div class="innovation-nav">
+            <ul class="nav nav-pills">
+
+                <li class="nav-item">
+                    <button class="nav-link active" id="allTab" data-bs-toggle="tab" data-bs-target="#all"
+                        type="button">
+                        <span>Hamısı</span>
+                    </button>
+                </li>
+
+                <li class="nav-item">
+                    <button class="nav-link" id="newsTab" data-bs-toggle="tab" data-bs-target="#news" type="button">
+                        <img src="assets/icons/news-icon.svg" alt="">
+                        <span>Xəbərlər</span>
+                    </button>
+                </li>
+
+                <li class="nav-item">
+                    <button class="nav-link" id="eventsTab" data-bs-toggle="tab" data-bs-target="#events" type="button">
+                        <img src="assets/icons/event-icon.svg" alt="">
+                        <span>Tədbirlər</span>
+                    </button>
+                </li>
+
+                <li class="nav-item">
+                    <button class="nav-link" id="tecnologyTab" data-bs-toggle="tab" data-bs-target="#tecnology"
+                        type="button">
+                        <img src="assets/icons/fabric.svg" alt="">
+                        <span>Texnologiya</span>
+                    </button>
+                </li>
+
+                <div class="nav-searchbar">
+                    <img src="assets/icons/search.svg" alt="">
+                    <input type="text" placeholder="Axtarış...">
+                </div>
+
+            </ul>
+        </div>
+
+        <div class="tab-content">
+
+            <div class="tab-pane active send-request-form" id="all">
+
+                <div class="tab-wrapper">
+
+                    <div class="blog-cards">
+
+                        <a href="blogDetails.html" class="blog-card">
+
+                            <div class="blog-image">
+                                <img src="assets/images/blog-img.png" alt="">
+                            </div>
+
+                            <div class="blog-infos">
+
+                                <div class="blog-date">
+                                    <img src="assets/icons/calendar.svg" alt="">
+                                    <span>12 Aprel 2024</span>
+                                </div>
+
+                                <span class="blog-title">
+                                    Bioloji parçalanan qablaşdırma
+                                    texnologiyaları
+                                </span>
+
+                                <p class="blog-description">
+                                    Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                    vermədən necə yox olur? Bu məqalədə ən son elmi
+                                    nailiyyətlərimizdən bəhs edirik.
+                                </p>
+
+                                <div class="line"></div>
+
+                                <div href="" class="see-all">
+                                    <span>Ətraflı oxu</span>
+                                    <img src="assets/icons/arrow-right-green.svg" alt="">
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <a href="blogDetails.html" class="blog-card">
+
+                            <div class="blog-image">
+                                <img src="assets/images/blog-img.png" alt="">
+                            </div>
+
+                            <div class="blog-infos">
+
+                                <div class="blog-date">
+                                    <img src="assets/icons/calendar.svg" alt="">
+                                    <span>12 Aprel 2024</span>
+                                </div>
+
+                                <span class="blog-title">
+                                    Bioloji parçalanan qablaşdırma
+                                    texnologiyaları
+                                </span>
+
+                                <p class="blog-description">
+                                    Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                    vermədən necə yox olur? Bu məqalədə ən son elmi
+                                    nailiyyətlərimizdən bəhs edirik.
+                                </p>
+
+                                <div class="line"></div>
+
+                                <div href="" class="see-all">
+                                    <span>Ətraflı oxu</span>
+                                    <img src="assets/icons/arrow-right-green.svg" alt="">
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <a href="blogDetails.html" class="blog-card">
+
+                            <div class="blog-image">
+                                <img src="assets/images/blog-img.png" alt="">
+                            </div>
+
+                            <div class="blog-infos">
+
+                                <div class="blog-date">
+                                    <img src="assets/icons/calendar.svg" alt="">
+                                    <span>12 Aprel 2024</span>
+                                </div>
+
+                                <span class="blog-title">
+                                    Bioloji parçalanan qablaşdırma
+                                    texnologiyaları
+                                </span>
+
+                                <p class="blog-description">
+                                    Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                    vermədən necə yox olur? Bu məqalədə ən son elmi
+                                    nailiyyətlərimizdən bəhs edirik.
+                                </p>
+
+                                <div class="line"></div>
+
+                                <div href="" class="see-all">
+                                    <span>Ətraflı oxu</span>
+                                    <img src="assets/icons/arrow-right-green.svg" alt="">
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <a href="blogDetails.html" class="blog-card">
+
+                            <div class="blog-image">
+                                <img src="assets/images/blog-img.png" alt="">
+                            </div>
+
+                            <div class="blog-infos">
+
+                                <div class="blog-date">
+                                    <img src="assets/icons/calendar.svg" alt="">
+                                    <span>12 Aprel 2024</span>
+                                </div>
+
+                                <span class="blog-title">
+                                    Bioloji parçalanan qablaşdırma
+                                    texnologiyaları
+                                </span>
+
+                                <p class="blog-description">
+                                    Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                    vermədən necə yox olur? Bu məqalədə ən son elmi
+                                    nailiyyətlərimizdən bəhs edirik.
+                                </p>
+
+                                <div class="line"></div>
+
+                                <div href="" class="see-all">
+                                    <span>Ətraflı oxu</span>
+                                    <img src="assets/icons/arrow-right-green.svg" alt="">
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <a href="blogDetails.html" class="blog-card">
+
+                            <div class="blog-image">
+                                <img src="assets/images/blog-img.png" alt="">
+                            </div>
+
+                            <div class="blog-infos">
+
+                                <div class="blog-date">
+                                    <img src="assets/icons/calendar.svg" alt="">
+                                    <span>12 Aprel 2024</span>
+                                </div>
+
+                                <span class="blog-title">
+                                    Bioloji parçalanan qablaşdırma
+                                    texnologiyaları
+                                </span>
+
+                                <p class="blog-description">
+                                    Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                    vermədən necə yox olur? Bu məqalədə ən son elmi
+                                    nailiyyətlərimizdən bəhs edirik.
+                                </p>
+
+                                <div class="line"></div>
+
+                                <div href="" class="see-all">
+                                    <span>Ətraflı oxu</span>
+                                    <img src="assets/icons/arrow-right-green.svg" alt="">
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" class="page-link prev">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li><a href="#" class="page-link active">1</a></li>
+                        <li><a href="#" class="page-link">2</a></li>
+                        <li><a href="#" class="page-link">3</a></li>
+
+                        <li><span class="ellipsis">...</span></li>
+
+                        <li><a href="#" class="page-link">8</a></li>
+
+                        <li>
+                            <a href="#" class="page-link next">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="tab-pane send-request-form" id="news">
+                <div class="tab-wrapper">
+                    news
+                </div>
+            </div>
+
+        </div>
+        <!-- tabs end -->
+
+        <!-- subscribe start -->
+        <div class="subscribe-card">
+            <div class="card-intro">
+                <span class="card-title">Yeniliklərdən xəbərdar olun</span>
+                <p class="card-description">E-poçt ünvanınızı daxil edin və yeni kampaniyalarımız, endirimlərimiz
+                    haqqında ilk siz xəbərdar olun.</p>
+            </div>
+            <div class="card-form">
+
+                <div class="form">
+                    <input type="text" placeholder="E-poçt ünvanınız">
+
+                    <button class="subscribe-button">Abunə ol</button>
+                </div>
+
+                <span class="form-warning">*Spam göndərmirik. İstənilən vaxt abunəliyi dayandıra bilərsiniz.</span>
+
+            </div>
+        </div>
+        <!-- subscribe end   -->
+
+    </div>
+
+    <!-- footer start -->
+    <footer>
+
+        <div class="footer-intro">
+
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+
+            <p class="intro-description">
+                Biznesiniz üçün keyfiyyətli və təbiət
+                dostu qablaşdırma məhsullarının
+                etibarlı təchizatçısı.
+            </p>
+
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <img src="assets/icons/world-icon.svg" alt="">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="assets/icons/fotograf-icon.svg" alt="">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="assets/icons/triangle-icon.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="pages">
+            <span class="pages-title">Səhifələr</span>
+
+            <a href="index.html">Ana səhifə</a>
+            <a href="products.html">Məhsullar</a>
+            <a href="about.html">Haqqımızda</a>
+            <a href="innovations.html">Yeniliklər</a>
+            <a href="contact.html">Əlaqə</a>
+        </div>
+
+        <div class="contact">
+
+            <span class="contact-title">Əlaqə</span>
+
+            <div class="contact-info">
+                <img src="assets/icons/location-green.svg" alt="">
+                <span>
+                    Bakı ş., Nərimanov r-nu, Əhməd
+                    Rəcəbli küç. 156
+                </span>
+            </div>
+
+            <div class="contact-info">
+                <img src="assets/icons/phone-green.svg" alt="">
+                <span>
+                    +994 50 123 45 67
+                </span>
+            </div>
+
+            <div class="contact-info">
+                <img src="assets/icons/letter-green.svg" alt="">
+                <span>
+                    info@eco-star.az
+                </span>
+            </div>
+
+        </div>
+
+        <div class="hours">
+            <span class="hours-title">İş saatları</span>
+
+            <div class="hour-info">
+                <span class="label">B.e - C.</span>
+                <span class="value">09:00 - 18:00</span>
+            </div>
+
+            <div class="hour-info">
+                <span class="label">Şənbə</span>
+                <span class="value">10:00 - 15:00</span>
+            </div>
+
+            <div class="hour-info">
+                <span class="label">Bazar</span>
+                <span class="value-danger">Bağlıdır</span>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+
+    <!-- bottom bar start -->
+    <div class="bottom-bar">
+        <span class="copyright">
+            © 2026 ECOSTAR. Bütün hüquqlar qorunur.
+        </span>
+
+        <div class="bottom-bar-links">
+            <a href="" class="privacy">Məxfilik siyasəti</a>
+            <a href="">İstifadə şərtləri</a>
+        </div>
+    </div>
+    <!-- bottom bar end -->
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

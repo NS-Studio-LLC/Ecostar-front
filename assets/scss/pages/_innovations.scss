@@ -1,0 +1,19 @@
+.innovations-page-container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .tab-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+
+        .blog-cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+    }
+
+}
