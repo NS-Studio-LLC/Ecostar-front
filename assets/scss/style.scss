@@ -14,6 +14,9 @@
 // (inputs)
 @use './ui/inputs/headerInput';
 @use './ui/inputs/nav-searchbar';
+@use './ui/inputs/input-with-label';
+@use './ui/inputs/input-with-icon';
+@use './ui/inputs/textarea-with-label';
 
 // (buttons)
 @use './ui/buttons/whatsappButton';
@@ -56,3 +59,4 @@
 @use './pages/about-us';
 @use './pages/innovations';
 @use './pages/blog-details';
+@use './pages/contact';

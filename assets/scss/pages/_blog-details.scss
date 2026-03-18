@@ -2,21 +2,23 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 0 80px;
 
     .breadcrumb {
         margin-top: 32px;
+        padding: 0 100px;
     }
 
     .blog-head {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        padding: 0 100px;
 
         .blog-date {
             display: flex;
             align-items: center;
             gap: 16px;
+
 
             .date {
                 display: flex;
@@ -63,17 +65,21 @@
         height: 411px;
         border-radius: 24px;
         overflow: hidden;
+        padding: 0 100px;
 
         img {
-            object-fit: contain;
+            object-fit: cover;
             width: 100%;
             height: 100%;
+            border-radius: 24px;
         }
     }
 
     .blog-details {
         display: flex;
         gap: 40px;
+        padding: 0 100px;
+        padding-bottom: 100px;
 
         &-text-side {
             width: 70%;
@@ -86,9 +92,31 @@
                 border-radius: 24px;
                 border: 1px solid rgba(17, 212, 98, 0.20);
                 background: #F6F8F7;
-
                 display: flex;
+                justify-content: space-between;
                 gap: 24px;
+
+                .text-side {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .section-title {
+                        color: #0F172A;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+                    }
+
+                    .section-description {
+                        color: #475569;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px;
+                    }
+                }
             }
         }
 
@@ -199,5 +227,31 @@
 
         }
 
+    }
+
+    .similar-blogs {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 24px;
+        border-top: 1px solid #F0F4F2;
+        background: #FFF;
+        padding: 24px;
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+
+            .blog-card {
+                background-color: #efefef;
+            }
+        }
     }
 }

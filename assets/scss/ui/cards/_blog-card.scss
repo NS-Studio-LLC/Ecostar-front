@@ -3,7 +3,7 @@
     overflow: hidden;
     background-color: #fff;
 
-    .blog-image {
+    .blog-card-image {
         height: 225px;
 
         img {
@@ -40,15 +40,10 @@
             font-weight: 500;
             line-height: 25px;
 
-            // white-space: nowrap;
-            // overflow: hidden;
-            // text-overflow: ellipsis;
-            // width: 90%;
-
-            display: -webkit-box !important;
-            -webkit-box-orient: vertical !important;
-            -webkit-line-clamp: 2 !important;
-            overflow: hidden !important;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 99%;
 
         }
 
@@ -59,10 +54,15 @@
             font-weight: 500;
             line-height: 22.75px;
 
-            display: -webkit-box !important;
-            -webkit-box-orient: vertical !important;
-            -webkit-line-clamp: 3 !important;
-            overflow: hidden !important;
+            // white-space: nowrap;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            // width: 99%;
+
+            // display: -webkit-box !important;
+            // -webkit-box-orient: vertical !important;
+            // -webkit-line-clamp: 2 !important;
+            // overflow: hidden !important; 
         }
     }
 
