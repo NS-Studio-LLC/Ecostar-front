@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 header {
     padding: 12px 32px;
     display: flex;
@@ -6,8 +8,16 @@ header {
     gap: 32px;
     background-color: #fff;
 
-    .header-input-div{
+    @include mq(tablet-portrait-up) {
+        gap: 16px;
+    }
+
+    .header-input-div {
         flex-grow: 1;
+    }
+
+    .header-search-mobile {
+        margin-left: auto;
     }
 
     .logo {
@@ -27,6 +37,10 @@ header {
         align-items: center;
         gap: 24px;
 
+        @include mq(tablet-portrait-up) {
+            display: none;
+        }
+
         a {
             color: #111814;
             font-size: 14px;
@@ -41,6 +55,10 @@ header {
         align-items: center;
         gap: 8px;
 
+        @include mq(tablet-portrait-up) {
+            display: none;
+        }
+
         .header-btn {
             width: 40px;
             height: 40px;
@@ -51,6 +69,25 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+    }
+
+    .menu-button {
+        width: fit-content;
+
+        img {
+            width: 36px;
+            height: 36px;
+        }
+
+        @include mq(tablet-portrait-down) {
+            display: none;
+        }
+    }
+
+    .header-input-div {
+        @include mq(tablet-portrait-up) {
+            display: none;
         }
     }
 

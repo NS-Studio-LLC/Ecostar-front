@@ -17,6 +17,7 @@
 @use './ui/inputs/input-with-label';
 @use './ui/inputs/input-with-icon';
 @use './ui/inputs/textarea-with-label';
+@use './ui/inputs/headerSearchMobile';
 
 // (buttons)
 @use './ui/buttons/whatsappButton';
@@ -39,6 +40,7 @@
 @use './ui/cards/download-catalogue-card';
 @use './ui/cards/blog-card';
 @use './ui/cards/blog-subscibe-card';
+@use './ui/cards/offcanvas';
 
 // (accordions)
 @use './ui/accordions/filter-accordion';

@@ -19,9 +19,9 @@
     <!-- header start -->
     <header>
 
-        <div class="logo">
+        <a href="index.html" class="logo">
             <img src="assets/images/logo.png" alt="">
-        </div>
+        </a>
 
         <div class="header-input-div">
             <img src="assets/icons/search.svg" alt="">
@@ -53,6 +53,55 @@
             </a>
 
         </div>
+
+        <div class="header-search-mobile" id="searchBox">
+            <img src="assets/icons/search.svg" alt="Search" class="search-icon">
+            <input type="text" placeholder="Axtar..." class="search-input" />
+        </div>
+
+        <!-- offcanvas start -->
+        <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <!-- <img src="assets/icons/menu-icon.svg" alt="" class="white-icon"> -->
+            <img src="assets/icons/menu-icon-black.svg" alt="" class="black-icon">
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+            <div class="offcanvas-header">
+                <a href="index.html" class="logo-div">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <div class="offcanvas-navs">
+                    <a href="index.html" class="nav-link">
+                        <span>Ana səhifə</span>
+                        <img src="assets/icons/arrow-up.svg" alt="">
+                    </a>
+                    <a href="products.html" class="nav-link"><span>Məhsullar</span> <img
+                            src="assets/icons/arrow-up.svg" alt=""></a>
+                    <a href="about.html" class="nav-link"><span>Haqqımızda</span> <img src="assets/icons/arrow-up.svg"
+                            alt=""></a>
+
+                    <a href="innovations.html" class="nav-link"><span>Yeniliklər</span> <img src="assets/icons/arrow-up.svg"
+                            alt=""></a>
+                    <a href="contact.html" class="nav-link"><span>Əlaqə</span> <img src="assets/icons/arrow-up.svg"
+                            alt=""></a>
+                </div>
+
+                <div class="offcanvas-actions">
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- offcanvas end -->
 
     </header>
     <!-- header end -->
@@ -700,6 +749,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="assets/js/productsSwiper.js"></script>
+    <script src="assets/js/searchInput.js"></script>
 </body>
 
 </html>

@@ -77,8 +77,16 @@ header {
   gap: 32px;
   background-color: #fff;
 }
+@media only screen and (max-width: 768px) {
+  header {
+    gap: 16px;
+  }
+}
 header .header-input-div {
   flex-grow: 1;
+}
+header .header-search-mobile {
+  margin-left: auto;
 }
 header .logo {
   width: 176px;
@@ -96,6 +104,11 @@ header nav {
   align-items: center;
   gap: 24px;
 }
+@media only screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
 header nav a {
   color: #111814;
   font-size: 14px;
@@ -108,6 +121,11 @@ header .header-actions {
   align-items: center;
   gap: 8px;
 }
+@media only screen and (max-width: 768px) {
+  header .header-actions {
+    display: none;
+  }
+}
 header .header-actions .header-btn {
   width: 40px;
   height: 40px;
@@ -118,6 +136,24 @@ header .header-actions .header-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+header .menu-button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header .menu-button img {
+  width: 36px;
+  height: 36px;
+}
+@media only screen and (min-width: 768px) {
+  header .menu-button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .header-input-div {
+    display: none;
+  }
 }
 
 footer {
@@ -406,6 +442,55 @@ footer .hours .hour-info .value-danger {
   font-weight: 500;
   line-height: 24px;
   padding: 16px;
+}
+
+.header-search-mobile {
+  height: 40px;
+  width: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.25s ease;
+  box-shadow: 0px 0px 10px -5px #000000;
+  background-color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .header-search-mobile {
+    display: none;
+  }
+}
+.header-search-mobile .search-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.header-search-mobile .search-input {
+  position: absolute;
+  left: 44px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  outline: 0;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.header-search-mobile.is-open {
+  width: 260px;
+  justify-content: flex-start;
+  padding-left: 12px;
+}
+.header-search-mobile.is-open .search-input {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .whatsapp-button {
@@ -1237,6 +1322,72 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+}
+
+.offcanvas {
+  z-index: 9999;
+  min-height: 100vh;
+}
+.offcanvas-header {
+  padding: 12px;
+}
+.offcanvas-header .logo-div {
+  display: block !important;
+  width: 176px;
+  height: 57.081px;
+  aspect-ratio: 37/12;
+}
+.offcanvas-header .logo-div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.offcanvas-body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.offcanvas-body .offcanvas-navs .nav-link {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in;
+}
+.offcanvas-body .offcanvas-navs .nav-link:hover {
+  transform: scale(1.01);
+}
+.offcanvas-body .offcanvas-navs .nav-link span {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.offcanvas-body .offcanvas-navs .nav-link img {
+  width: 24px;
+  height: 24px;
+}
+.offcanvas-body .offcanvas-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+}
+.offcanvas-body .offcanvas-actions .hover-button-white {
+  display: inline-block;
+}
+.offcanvas-body .offcanvas-actions .view-projects {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px;
+  text-decoration: none;
 }
 
 .filter-accordion .accordion-item {
