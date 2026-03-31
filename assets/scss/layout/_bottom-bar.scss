@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .bottom-bar {
     display: flex;
     justify-content: space-between;
@@ -5,12 +7,28 @@
     background-color: #fff;
     border-top: 1px solid #F0F4F2;
 
+    @include mq(tablet-portrait-up) {
+        padding: 12px;
+    }
+
+    @include mq(phone-sm) {
+        flex-direction: column;
+    }
+
     .copyright {
         color: #618972;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 20px;
+
+        @include mq(tablet-portrait-up) {
+            font-size: 12px;
+        }
+
+        @include mq(phone-sm) {
+            text-align: center;
+        }
     }
 
     &-links {
@@ -18,12 +36,22 @@
         align-items: center;
         gap: 24px;
 
+        @include mq(phone-sm) {
+            justify-content: center;
+        }
+
         a {
             color: #618972;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
             line-height: 20px;
+
+            @include mq(tablet-portrait-up) {
+                font-size: 12px;
+            }
+
+
         }
     }
 

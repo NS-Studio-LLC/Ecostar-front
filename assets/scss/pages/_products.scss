@@ -1,8 +1,14 @@
+@use "../abstracts/mixins" as *;
+
 .products-page {
     padding: 32px 160px 56px 160px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @include mq(tablet-portrait-up) {
+        padding: 16px;
+    }
 
     .products-hero {
         height: 220px;
@@ -47,11 +53,29 @@
         display: flex;
         gap: 32px;
 
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+        }
+
         .product-filter {
             width: 25%;
             display: flex;
             flex-direction: column;
             gap: 32px;
+
+            @include mq(tablet-portrait-up) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+
+                .line {
+                    display: none;
+                }
+            }
+
+            @include mq(phone-only) {
+                grid-template-columns: repeat(1, 1fr);
+            }
 
             .line {
                 height: 1px;

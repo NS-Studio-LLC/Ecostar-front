@@ -1,7 +1,13 @@
+@use '../abstracts/mixins' as *;
+
 .homepage-container {
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    @include mq(tablet-portrait-up) {
+        gap: 0px;
+    }
 
     .homepage-hero {
         padding: 48px;
@@ -195,12 +201,26 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 16px;
+
+        @include mq(tablet-portrait-up) {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 8px 0px;
+        }
+
+        @include mq(phone-only) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     .recently-added {
         display: flex;
         flex-direction: column;
         gap: 24px;
+
+        @include mq(tablet-portrait-up) {
+            padding: 8px 0px;
+            gap: 16px;
+        }
 
         .section-header {
             display: flex;
@@ -212,6 +232,15 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 24px;
+
+            @include mq(tablet-portrait-up) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            @include mq(phone-only) {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     }
 
@@ -223,11 +252,20 @@
         display: flex;
         gap: 32px;
 
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+            padding: 20px;
+        }
+
         .section-intro {
             display: flex;
             flex-direction: column;
             gap: 16px;
             width: 35%;
+
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+            }
 
             .special-offer {
                 padding: 4px 12px;
@@ -281,6 +319,10 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 24px;
             flex-grow: 1;
+
+            @include mq(phone-only){
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     }
 

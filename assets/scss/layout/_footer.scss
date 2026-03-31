@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 footer {
     padding: 64px 32px 32px 32px;
     background-color: #fff;
@@ -5,11 +7,22 @@ footer {
     justify-content: space-between;
     gap: 48px;
 
+    @include mq(tablet-portrait-up) {
+        padding: 72px 24px 40px 24px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
     .footer-intro {
         display: flex;
         flex-direction: column;
         gap: 24px;
         width: 30%;
+
+        @include mq(tablet-portrait-up) {
+            width: 100%;
+        }
+
 
         .logo {
             width: 266px;

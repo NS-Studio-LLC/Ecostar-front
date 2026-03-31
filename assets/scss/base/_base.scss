@@ -10,6 +10,10 @@ body {
 
 .page-container {
     padding: 24px 32px;
+
+    @include mq(tablet-portrait-up) {
+        padding: 12px;
+    }
 }
 
 p {
@@ -70,4 +74,8 @@ textarea {
     font-weight: 500;
     line-height: 36px;
     letter-spacing: -0.75px;
+
+    @include mq(tablet-portrait-up) {
+        font-size: 18px;
+    }
 }
