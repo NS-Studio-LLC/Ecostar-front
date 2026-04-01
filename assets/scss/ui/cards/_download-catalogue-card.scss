@@ -1,3 +1,5 @@
+@use '../../abstracts/mixins' as *;
+
 .download-catalogue-card {
     padding: 64px;
     display: flex;
@@ -8,6 +10,10 @@
     background: #0A1F14;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
+    @include mq(tablet-portrait-up) {
+        padding: 32px;
+    }
+
     .card-title {
         color: #FFF;
         text-align: center;
@@ -15,6 +21,10 @@
         font-style: normal;
         font-weight: 500;
         line-height: 40px;
+
+        @include mq(tablet-portrait-up) {
+            font-size: 24px;
+        }
     }
 
     .card-description {
@@ -24,11 +34,19 @@
         font-style: normal;
         font-weight: 500;
         line-height: 28px;
+
+        @include mq(tablet-portrait-up) {
+            font-size: 16px;
+        }
     }
 
-    .card-actions{
+    .card-actions {
         display: flex;
         align-items: center;
         gap: 16px;
+
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+        }
     }
 }

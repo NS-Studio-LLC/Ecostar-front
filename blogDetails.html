@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Ecostar</title>
 </head>
@@ -201,120 +202,322 @@
         </div>
 
         <div class="similar-blogs">
+
             <div class="section-header">
                 <span class="section-title">Oxşar məqalələr</span>
+
+                <div class="swipe-buttons">
+                    <button class="swipe-button btn-prew" type="button">
+                        <img src="assets/icons/prew-arrow.svg" alt="">
+                    </button>
+
+                    <button class="swipe-button btn-next" type="button">
+                        <img src="assets/icons/next-arrow.svg" alt="">
+                    </button>
+
+
+                </div>
 
                 <a href="" class="see-all">
                     <span>Bütün blog</span>
                 </a>
             </div>
+
             <div class="section-body">
 
-                <a href="blogDetails.html" class="blog-card">
+                <div class="swiper similarBlogsSwiper">
 
-                    <div class="blog-card-image">
-                        <img src="assets/images/blog-img.png" alt="">
-                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="blogDetails.html" class="blog-card">
 
-                    <div class="blog-infos">
+                                <div class="blog-card-image">
+                                    <img src="assets/images/blog-img.png" alt="">
+                                </div>
 
-                        <div class="blog-date">
-                            <img src="assets/icons/calendar.svg" alt="">
-                            <span>12 Aprel 2024</span>
+                                <div class="blog-infos">
+
+                                    <div class="blog-date">
+                                        <img src="assets/icons/calendar.svg" alt="">
+                                        <span>12 Aprel 2024</span>
+                                    </div>
+
+                                    <span class="blog-title">
+                                        Bioloji parçalanan qablaşdırma
+                                        texnologiyaları
+                                    </span>
+
+                                    <p class="blog-description">
+                                        Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                        vermədən necə yox olur? Bu məqalədə ən son elmi
+                                        nailiyyətlərimizdən bəhs edirik.
+                                    </p>
+
+                                    <div class="line"></div>
+
+                                    <div href="" class="see-all">
+                                        <span>Ətraflı oxu</span>
+                                        <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="blogDetails.html" class="blog-card">
 
-                        <span class="blog-title">
-                            Bioloji parçalanan qablaşdırma
-                            texnologiyaları
-                        </span>
+                                <div class="blog-card-image">
+                                    <img src="assets/images/blog-img.png" alt="">
+                                </div>
 
-                        <p class="blog-description">
-                            Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
-                            vermədən necə yox olur? Bu məqalədə ən son elmi
-                            nailiyyətlərimizdən bəhs edirik.
-                        </p>
+                                <div class="blog-infos">
 
-                        <div class="line"></div>
+                                    <div class="blog-date">
+                                        <img src="assets/icons/calendar.svg" alt="">
+                                        <span>12 Aprel 2024</span>
+                                    </div>
 
-                        <div href="" class="see-all">
-                            <span>Ətraflı oxu</span>
-                            <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    <span class="blog-title">
+                                        Bioloji parçalanan qablaşdırma
+                                        texnologiyaları
+                                    </span>
+
+                                    <p class="blog-description">
+                                        Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                        vermədən necə yox olur? Bu məqalədə ən son elmi
+                                        nailiyyətlərimizdən bəhs edirik.
+                                    </p>
+
+                                    <div class="line"></div>
+
+                                    <div href="" class="see-all">
+                                        <span>Ətraflı oxu</span>
+                                        <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="blogDetails.html" class="blog-card">
 
-                    </div>
+                                <div class="blog-card-image">
+                                    <img src="assets/images/blog-img.png" alt="">
+                                </div>
 
-                </a>
+                                <div class="blog-infos">
 
-                <a href="blogDetails.html" class="blog-card">
+                                    <div class="blog-date">
+                                        <img src="assets/icons/calendar.svg" alt="">
+                                        <span>12 Aprel 2024</span>
+                                    </div>
 
-                    <div class="blog-card-image">
-                        <img src="assets/images/blog-img.png" alt="">
-                    </div>
+                                    <span class="blog-title">
+                                        Bioloji parçalanan qablaşdırma
+                                        texnologiyaları
+                                    </span>
 
-                    <div class="blog-infos">
+                                    <p class="blog-description">
+                                        Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                        vermədən necə yox olur? Bu məqalədə ən son elmi
+                                        nailiyyətlərimizdən bəhs edirik.
+                                    </p>
 
-                        <div class="blog-date">
-                            <img src="assets/icons/calendar.svg" alt="">
-                            <span>12 Aprel 2024</span>
+                                    <div class="line"></div>
+
+                                    <div href="" class="see-all">
+                                        <span>Ətraflı oxu</span>
+                                        <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="blogDetails.html" class="blog-card">
 
-                        <span class="blog-title">
-                            Bioloji parçalanan qablaşdırma
-                            texnologiyaları
-                        </span>
+                                <div class="blog-card-image">
+                                    <img src="assets/images/blog-img.png" alt="">
+                                </div>
 
-                        <p class="blog-description">
-                            Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
-                            vermədən necə yox olur? Bu məqalədə ən son elmi
-                            nailiyyətlərimizdən bəhs edirik.
-                        </p>
+                                <div class="blog-infos">
 
-                        <div class="line"></div>
+                                    <div class="blog-date">
+                                        <img src="assets/icons/calendar.svg" alt="">
+                                        <span>12 Aprel 2024</span>
+                                    </div>
 
-                        <div href="" class="see-all">
-                            <span>Ətraflı oxu</span>
-                            <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    <span class="blog-title">
+                                        Bioloji parçalanan qablaşdırma
+                                        texnologiyaları
+                                    </span>
+
+                                    <p class="blog-description">
+                                        Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                        vermədən necə yox olur? Bu məqalədə ən son elmi
+                                        nailiyyətlərimizdən bəhs edirik.
+                                    </p>
+
+                                    <div class="line"></div>
+
+                                    <div href="" class="see-all">
+                                        <span>Ətraflı oxu</span>
+                                        <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="blogDetails.html" class="blog-card">
 
-                    </div>
+                                <div class="blog-card-image">
+                                    <img src="assets/images/blog-img.png" alt="">
+                                </div>
 
-                </a>
+                                <div class="blog-infos">
 
-                <a href="blogDetails.html" class="blog-card">
+                                    <div class="blog-date">
+                                        <img src="assets/icons/calendar.svg" alt="">
+                                        <span>12 Aprel 2024</span>
+                                    </div>
 
-                    <div class="blog-card-image">
-                        <img src="assets/images/blog-img.png" alt="">
-                    </div>
+                                    <span class="blog-title">
+                                        Bioloji parçalanan qablaşdırma
+                                        texnologiyaları
+                                    </span>
 
-                    <div class="blog-infos">
+                                    <p class="blog-description">
+                                        Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                        vermədən necə yox olur? Bu məqalədə ən son elmi
+                                        nailiyyətlərimizdən bəhs edirik.
+                                    </p>
 
-                        <div class="blog-date">
-                            <img src="assets/icons/calendar.svg" alt="">
-                            <span>12 Aprel 2024</span>
+                                    <div class="line"></div>
+
+                                    <div href="" class="see-all">
+                                        <span>Ətraflı oxu</span>
+                                        <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="blogDetails.html" class="blog-card">
 
-                        <span class="blog-title">
-                            Bioloji parçalanan qablaşdırma
-                            texnologiyaları
-                        </span>
+                                <div class="blog-card-image">
+                                    <img src="assets/images/blog-img.png" alt="">
+                                </div>
 
-                        <p class="blog-description">
-                            Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
-                            vermədən necə yox olur? Bu məqalədə ən son elmi
-                            nailiyyətlərimizdən bəhs edirik.
-                        </p>
+                                <div class="blog-infos">
 
-                        <div class="line"></div>
+                                    <div class="blog-date">
+                                        <img src="assets/icons/calendar.svg" alt="">
+                                        <span>12 Aprel 2024</span>
+                                    </div>
 
-                        <div href="" class="see-all">
-                            <span>Ətraflı oxu</span>
-                            <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    <span class="blog-title">
+                                        Bioloji parçalanan qablaşdırma
+                                        texnologiyaları
+                                    </span>
+
+                                    <p class="blog-description">
+                                        Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                        vermədən necə yox olur? Bu məqalədə ən son elmi
+                                        nailiyyətlərimizdən bəhs edirik.
+                                    </p>
+
+                                    <div class="line"></div>
+
+                                    <div href="" class="see-all">
+                                        <span>Ətraflı oxu</span>
+                                        <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="blogDetails.html" class="blog-card">
 
+                                <div class="blog-card-image">
+                                    <img src="assets/images/blog-img.png" alt="">
+                                </div>
+
+                                <div class="blog-infos">
+
+                                    <div class="blog-date">
+                                        <img src="assets/icons/calendar.svg" alt="">
+                                        <span>12 Aprel 2024</span>
+                                    </div>
+
+                                    <span class="blog-title">
+                                        Bioloji parçalanan qablaşdırma
+                                        texnologiyaları
+                                    </span>
+
+                                    <p class="blog-description">
+                                        Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                        vermədən necə yox olur? Bu məqalədə ən son elmi
+                                        nailiyyətlərimizdən bəhs edirik.
+                                    </p>
+
+                                    <div class="line"></div>
+
+                                    <div href="" class="see-all">
+                                        <span>Ətraflı oxu</span>
+                                        <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="blogDetails.html" class="blog-card">
+
+                                <div class="blog-card-image">
+                                    <img src="assets/images/blog-img.png" alt="">
+                                </div>
+
+                                <div class="blog-infos">
+
+                                    <div class="blog-date">
+                                        <img src="assets/icons/calendar.svg" alt="">
+                                        <span>12 Aprel 2024</span>
+                                    </div>
+
+                                    <span class="blog-title">
+                                        Bioloji parçalanan qablaşdırma
+                                        texnologiyaları
+                                    </span>
+
+                                    <p class="blog-description">
+                                        Yeni nəsil qablaşdırma həllərimiz təbiətə zərər
+                                        vermədən necə yox olur? Bu məqalədə ən son elmi
+                                        nailiyyətlərimizdən bəhs edirik.
+                                    </p>
+
+                                    <div class="line"></div>
+
+                                    <div href="" class="see-all">
+                                        <span>Ətraflı oxu</span>
+                                        <img src="assets/icons/arrow-right-green.svg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
                     </div>
-
-                </a>
-
+                </div>
 
             </div>
         </div>
@@ -428,7 +631,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="assets/js/copyButton.js"></script>
+    <script src="assets/js/productsSwiper.js"></script>
 </body>
 
 </html>

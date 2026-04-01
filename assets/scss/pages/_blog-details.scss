@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .blog-details-page {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,10 @@
     .breadcrumb {
         margin-top: 32px;
         padding: 0 100px;
+
+        @include mq(desktop-up) {
+            padding: 0 0;
+        }
     }
 
     .blog-head {
@@ -13,6 +19,10 @@
         flex-direction: column;
         gap: 16px;
         padding: 0 100px;
+
+        @include mq(desktop-up) {
+            padding: 0 0;
+        }
 
         .blog-date {
             display: flex;
@@ -67,6 +77,10 @@
         overflow: hidden;
         padding: 0 100px;
 
+        @include mq(desktop-up) {
+            padding: 0 0;
+        }
+
         img {
             object-fit: cover;
             width: 100%;
@@ -81,11 +95,23 @@
         padding: 0 100px;
         padding-bottom: 100px;
 
+        @include mq(desktop-up) {
+            padding: 0 0;
+        }
+
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+        }
+
         &-text-side {
             width: 70%;
             display: flex;
             flex-direction: column;
             gap: 32px;
+
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+            }
 
             .see-catalogues {
                 padding: 24px;
@@ -125,6 +151,10 @@
             display: flex;
             flex-direction: column;
             gap: 32px;
+
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+            }
 
             .more-about-us {
                 border-radius: 24px;
@@ -244,14 +274,22 @@
             justify-content: space-between;
         }
 
-        .section-body {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+        // .section-body {
+        //     display: grid;
+        //     grid-template-columns: repeat(3, 1fr);
+        //     gap: 24px;
 
-            .blog-card {
-                background-color: #efefef;
-            }
-        }
+        //     @include mq(tablet-portrait-up) {
+        //         grid-template-columns: repeat(2, 1fr);
+        //     }
+
+        //     @include mq(phone-only) {
+        //         grid-template-columns: repeat(1, 1fr);
+        //     }
+
+        //     .blog-card {
+        //         background-color: #efefef;
+        //     }
+        // }
     }
 }

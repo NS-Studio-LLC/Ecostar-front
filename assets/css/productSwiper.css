@@ -1,1 +1,12 @@
-/*# sourceMappingURL=productSwiper.css.map */
+.swipe-buttons {
+  display: flex;
+  gap: 8px;
+}
+.swipe-buttons .swipe-button {
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=productSwiper.css.map */

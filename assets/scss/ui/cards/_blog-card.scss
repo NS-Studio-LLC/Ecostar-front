@@ -5,6 +5,9 @@
 
     .blog-card-image {
         height: 225px;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+        overflow: hidden;
 
         img {
             object-fit: cover;
@@ -54,10 +57,10 @@
             font-weight: 500;
             line-height: 22.75px;
 
-            // white-space: nowrap;
-            // overflow: hidden;
-            // text-overflow: ellipsis;
-            // width: 99%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 99%;
 
             // display: -webkit-box !important;
             // -webkit-box-orient: vertical !important;
@@ -65,5 +68,4 @@
             // overflow: hidden !important; 
         }
     }
-
 }

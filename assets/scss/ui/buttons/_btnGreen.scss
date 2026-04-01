@@ -1,3 +1,5 @@
+@use '../../abstracts/mixins' as *;
+
 .btn-green {
     padding: 16px 32px;
     border-radius: 24px;
@@ -15,5 +17,18 @@
         font-style: normal;
         font-weight: 600;
         line-height: 24px;
+    }
+
+    @include mq(tablet-portrait-up) {
+        padding: 8px 16px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    @include mq(phone-only) {
+        padding: 4px 8px;
+
     }
 }

@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"productSwiper.css"}
+{"version":3,"sources":["../scss/ui/swiper/productSwiper.scss","productSwiper.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,QAAA;ACCJ;ADCI;EACI,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;ACCR","file":"productSwiper.css"}

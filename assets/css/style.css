@@ -79,6 +79,11 @@ textarea {
   }
 }
 
+.section-header .swipe-buttons {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
 header {
   padding: 12px 32px;
   display: flex;
@@ -626,6 +631,19 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .btn-green {
+    padding: 8px 16px;
+  }
+  .btn-green span {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .btn-green {
+    padding: 4px 8px;
+  }
 }
 
 .btn-download {
@@ -1298,6 +1316,12 @@ footer .hours .hour-info .value-danger {
   width: 64px;
   height: 64px;
 }
+@media only screen and (max-width: 768px) {
+  .feature-card .card-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
 .feature-card .card-title {
   color: #0F172A;
   font-size: 20px;
@@ -1324,6 +1348,11 @@ footer .hours .hour-info .value-danger {
   background: #0A1F14;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
+@media only screen and (max-width: 768px) {
+  .download-catalogue-card {
+    padding: 32px;
+  }
+}
 .download-catalogue-card .card-title {
   color: #FFF;
   text-align: center;
@@ -1331,6 +1360,11 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 500;
   line-height: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .download-catalogue-card .card-title {
+    font-size: 24px;
+  }
 }
 .download-catalogue-card .card-description {
   color: #CBD5E1;
@@ -1340,10 +1374,20 @@ footer .hours .hour-info .value-danger {
   font-weight: 500;
   line-height: 28px;
 }
+@media only screen and (max-width: 768px) {
+  .download-catalogue-card .card-description {
+    font-size: 16px;
+  }
+}
 .download-catalogue-card .card-actions {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .download-catalogue-card .card-actions {
+    flex-direction: column;
+  }
 }
 
 .blog-card {
@@ -1353,6 +1397,9 @@ footer .hours .hour-info .value-danger {
 }
 .blog-card .blog-card-image {
   height: 225px;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  overflow: hidden;
 }
 .blog-card .blog-card-image img {
   -o-object-fit: cover;
@@ -1395,6 +1442,10 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 500;
   line-height: 22.75px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 99%;
 }
 
 .blog-subscribe-card {
@@ -1572,6 +1623,19 @@ footer .hours .hour-info .value-danger {
 .innovation-nav .active {
   background: #11D462 !important;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.swipe-buttons {
+  display: flex;
+  gap: 8px;
+}
+.swipe-buttons .swipe-button {
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heroSwiper {
@@ -2016,21 +2080,6 @@ footer .hours .hour-info .value-danger {
   align-items: center;
   justify-content: space-between;
 }
-.homepage-container .recently-added .section-body {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-@media only screen and (max-width: 768px) {
-  .homepage-container .recently-added .section-body {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 480px) {
-  .homepage-container .recently-added .section-body {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 .homepage-container .discounted-products-section {
   border-radius: 24px;
   border: 1px solid rgba(17, 212, 98, 0.1);
@@ -2119,32 +2168,14 @@ footer .hours .hour-info .value-danger {
   justify-content: space-between;
   align-items: center;
 }
-.homepage-container .popular-products .section-header .swipe-buttons {
-  display: flex;
-  gap: 8px;
-}
-.homepage-container .popular-products .section-header .swipe-buttons .swipe-button {
-  padding: 12px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .products-page {
-  padding: 32px 160px 56px 160px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-@media only screen and (max-width: 768px) {
-  .products-page {
-    padding: 16px;
-  }
-}
 .products-page .products-hero {
-  height: 220px;
+  height: 506px;
   border-radius: 24px;
   overflow: hidden;
   position: relative;
@@ -2610,11 +2641,23 @@ footer .hours .hour-info .value-danger {
   gap: 80px;
   padding: 112px 32px;
 }
+@media only screen and (max-width: 1024px) {
+  .about-us-page-container .about-us-section {
+    flex-direction: column;
+    padding: 56px 32px;
+    gap: 40px;
+  }
+}
 .about-us-page-container .about-us-section .section-image {
   border-radius: 24px;
   overflow: hidden;
   width: 50%;
   max-height: 425px;
+}
+@media only screen and (max-width: 1024px) {
+  .about-us-page-container .about-us-section .section-image {
+    width: 100%;
+  }
 }
 .about-us-page-container .about-us-section .section-image img {
   -o-object-fit: cover;
@@ -2622,11 +2665,22 @@ footer .hours .hour-info .value-danger {
   width: 100%;
   height: 100%;
 }
+@media only screen and (max-width: 1024px) {
+  .about-us-page-container .about-us-section .section-image img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 .about-us-page-container .about-us-section .section-body {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  .about-us-page-container .about-us-section .section-body {
+    width: 100%;
+  }
 }
 .about-us-page-container .about-us-section .section-body .text-content {
   color: #475569;
@@ -2653,12 +2707,22 @@ footer .hours .hour-info .value-danger {
   font-weight: 500;
   line-height: 40px;
 }
+@media only screen and (max-width: 480px) {
+  .about-us-page-container .about-us-section .section-body .counts .count .value {
+    font-size: 20px;
+  }
+}
 .about-us-page-container .about-us-section .section-body .counts .count .label {
   color: #0F172A;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .about-us-page-container .about-us-section .section-body .counts .count .label {
+    font-size: 10px;
+  }
 }
 .about-us-page-container .our-goals {
   display: flex;
@@ -2687,6 +2751,11 @@ footer .hours .hour-info .value-danger {
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
+@media only screen and (max-width: 768px) {
+  .about-us-page-container .our-goals .section-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .about-us-page-container .our-goals .section-body .feature-card {
   background-color: #fff;
 }
@@ -2696,6 +2765,12 @@ footer .hours .hour-info .value-danger {
   align-items: center;
   gap: 64px;
   padding: 112px 0;
+}
+@media only screen and (max-width: 768px) {
+  .about-us-page-container .our-advantages {
+    padding: 56px 0;
+    gap: 32px;
+  }
 }
 .about-us-page-container .our-advantages .section-header {
   display: flex;
@@ -2717,6 +2792,16 @@ footer .hours .hour-info .value-danger {
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
+@media only screen and (max-width: 768px) {
+  .about-us-page-container .our-advantages .section-body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about-us-page-container .our-advantages .section-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .about-us-page-container .download-section {
   display: flex;
   flex-direction: column;
@@ -2725,6 +2810,11 @@ footer .hours .hour-info .value-danger {
   background: #F6F8F7;
   padding: 80px 130px;
 }
+@media only screen and (max-width: 768px) {
+  .about-us-page-container .download-section {
+    padding: 16px;
+  }
+}
 .about-us-page-container .download-section .download-catalogue-card {
   width: 100%;
 }
@@ -2732,6 +2822,11 @@ footer .hours .hour-info .value-danger {
   display: flex;
   align-items: center;
   gap: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .about-us-page-container .download-section .certificates {
+    flex-direction: column;
+  }
 }
 .about-us-page-container .download-section .certificates .certificate {
   display: flex;
@@ -2760,11 +2855,22 @@ footer .hours .hour-info .value-danger {
   flex-direction: column;
   align-items: center;
   gap: 48px;
+  padding: 0;
 }
 .innovations-page-container .tab-wrapper .blog-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+}
+@media only screen and (max-width: 1024px) {
+  .innovations-page-container .tab-wrapper .blog-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .innovations-page-container .tab-wrapper .blog-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .blog-details-page {
@@ -2776,11 +2882,21 @@ footer .hours .hour-info .value-danger {
   margin-top: 32px;
   padding: 0 100px;
 }
+@media only screen and (max-width: 1200px) {
+  .blog-details-page .breadcrumb {
+    padding: 0 0;
+  }
+}
 .blog-details-page .blog-head {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 0 100px;
+}
+@media only screen and (max-width: 1200px) {
+  .blog-details-page .blog-head {
+    padding: 0 0;
+  }
 }
 .blog-details-page .blog-head .blog-date {
   display: flex;
@@ -2825,6 +2941,11 @@ footer .hours .hour-info .value-danger {
   overflow: hidden;
   padding: 0 100px;
 }
+@media only screen and (max-width: 1200px) {
+  .blog-details-page .blog-image {
+    padding: 0 0;
+  }
+}
 .blog-details-page .blog-image img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2838,11 +2959,26 @@ footer .hours .hour-info .value-danger {
   padding: 0 100px;
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 1200px) {
+  .blog-details-page .blog-details {
+    padding: 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .blog-details-page .blog-details {
+    flex-direction: column;
+  }
+}
 .blog-details-page .blog-details-text-side {
   width: 70%;
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .blog-details-page .blog-details-text-side {
+    width: 100%;
+  }
 }
 .blog-details-page .blog-details-text-side .see-catalogues {
   padding: 24px;
@@ -2877,6 +3013,11 @@ footer .hours .hour-info .value-danger {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .blog-details-page .blog-details-left-side {
+    width: 100%;
+  }
 }
 .blog-details-page .blog-details-left-side .more-about-us {
   border-radius: 24px;
@@ -2971,14 +3112,6 @@ footer .hours .hour-info .value-danger {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.blog-details-page .similar-blogs .section-body {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.blog-details-page .similar-blogs .section-body .blog-card {
-  background-color: #efefef;
 }
 
 .contact-us-page-container .page-head {
