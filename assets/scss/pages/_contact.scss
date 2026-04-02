@@ -1,3 +1,6 @@
+@use '../abstracts/mixins' as *;
+
+
 .contact-us-page-container {
     .page-head {
         padding: 64px 48px;
@@ -10,6 +13,10 @@
         gap: 64px;
         margin-bottom: 80px;
 
+        @include mq(tablet-landscape-up) {
+            flex-direction: column;
+        }
+
         .contact-infos {
             display: flex;
             flex-direction: column;
@@ -20,6 +27,11 @@
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             padding: 32px;
             width: 40%;
+
+            @include mq(tablet-landscape-up) {
+                width: 100%;
+            }
+
 
             &-title {
                 color: #111814;
@@ -112,6 +124,10 @@
             padding: 32px;
             width: 60%;
 
+            @include mq(tablet-landscape-up) {
+                width: 100%;
+            }
+
             .form-head {
                 display: flex;
                 flex-direction: column;
@@ -139,8 +155,16 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 24px;
 
+                @include mq(tablet-landscape-up) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
                 .last-item {
                     grid-column: 1 / span 2;
+
+                    @include mq(tablet-landscape-up) {
+                        grid-column: 1 / 1;
+                    }
 
                     textarea {
                         height: 130px;

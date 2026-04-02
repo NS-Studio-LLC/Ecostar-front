@@ -104,9 +104,9 @@ header .header-search-mobile {
   margin-left: auto;
 }
 header .logo {
-  width: 176px;
   height: 57.081px;
   aspect-ratio: 37/12;
+  flex-grow: 1;
 }
 header .logo img {
   -o-object-fit: cover;
@@ -1037,6 +1037,11 @@ footer .hours .hour-info .value-danger {
   align-items: center;
   gap: 12px;
 }
+@media only screen and (max-width: 480px) {
+  .subscribe-card .card-form .form {
+    flex-direction: column;
+  }
+}
 .subscribe-card .card-form .form input {
   padding: 15px 20px;
   color: #9CA3AF;
@@ -1048,6 +1053,11 @@ footer .hours .hour-info .value-danger {
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
+}
+@media only screen and (max-width: 480px) {
+  .subscribe-card .card-form .form input {
+    width: 100%;
+  }
 }
 .subscribe-card .card-form .form .subscribe-button {
   padding: 15px 32px;
@@ -3123,6 +3133,11 @@ footer .hours .hour-info .value-danger {
   gap: 64px;
   margin-bottom: 80px;
 }
+@media only screen and (max-width: 1024px) {
+  .contact-us-page-container .contact-us {
+    flex-direction: column;
+  }
+}
 .contact-us-page-container .contact-us .contact-infos {
   display: flex;
   flex-direction: column;
@@ -3133,6 +3148,11 @@ footer .hours .hour-info .value-danger {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   padding: 32px;
   width: 40%;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-us-page-container .contact-us .contact-infos {
+    width: 100%;
+  }
 }
 .contact-us-page-container .contact-us .contact-infos-title {
   color: #111814;
@@ -3210,6 +3230,11 @@ footer .hours .hour-info .value-danger {
   padding: 32px;
   width: 60%;
 }
+@media only screen and (max-width: 1024px) {
+  .contact-us-page-container .contact-us .contact-form {
+    width: 100%;
+  }
+}
 .contact-us-page-container .contact-us .contact-form .form-head {
   display: flex;
   flex-direction: column;
@@ -3234,8 +3259,18 @@ footer .hours .hour-info .value-danger {
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
+@media only screen and (max-width: 1024px) {
+  .contact-us-page-container .contact-us .contact-form form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .contact-us-page-container .contact-us .contact-form form .last-item {
   grid-column: 1/span 2;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-us-page-container .contact-us .contact-form form .last-item {
+    grid-column: 1/1;
+  }
 }
 .contact-us-page-container .contact-us .contact-form form .last-item textarea {
   height: 130px;
