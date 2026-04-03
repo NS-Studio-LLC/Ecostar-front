@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    background-color: #fff; 
+    background-color: #fff;
 
     @include mq(tablet-portrait-up) {
         gap: 16px;
@@ -22,11 +22,9 @@ header {
 
     .logo {
         height: 57.081px;
-        aspect-ratio: 37/12;
-        flex-grow: 1;
 
         img {
-            object-fit: cover;
+            object-fit: contain;
             width: 100%;
             height: 100%;
         }
@@ -71,6 +69,19 @@ header {
             justify-content: center;
         }
     }
+
+    // .btn-group {
+    //     background-color: green;
+
+    //     .dropdown-menu {
+
+    //         li {
+    //         }
+
+    //         .dropdown-item {
+    //         }
+    //     }
+    // }
 
     .menu-button {
         width: fit-content;
