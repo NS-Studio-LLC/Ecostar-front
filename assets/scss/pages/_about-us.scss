@@ -33,25 +33,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
-            .hero-badget {
-                padding: 4px 12px;
-                border-radius: 9999px;
-                border: 1px solid rgba(17, 212, 98, 0.30);
-                background: rgba(17, 212, 98, 0.20);
-                width: fit-content;
-
-                span {
-                    color: #11D462;
-                    text-align: center;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 16px;
-                    letter-spacing: 0.6px;
-                    text-transform: uppercase;
-                }
-            }
-
             .hero-title {
                 color: #FFF;
                 text-align: center;

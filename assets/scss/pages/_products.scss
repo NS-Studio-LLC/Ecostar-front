@@ -91,10 +91,6 @@
                     line-height: 28px;
                 }
 
-                .form-range {
-                    height: 0;
-                }
-
                 .filter-inputs {
                     display: flex;
                     flex-direction: column;
@@ -124,18 +120,25 @@
 
                 }
 
-                .ranges {
+                .range-input {
                     display: flex;
-                    align-items: center;
-                    justify-content: space-between;
+                    flex-direction: column;
 
-                    span {
+                    input {
+                        border-radius: 8px;
+                        border: 1px solid #D1D5DB;
+                        background: #FFF;
+                        width: 80px;
+                    }
+
+                    label {
                         color: #475569;
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: 20px;
                     }
+
                 }
 
             }
@@ -203,9 +206,13 @@
 
                 .product-cards {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
                     gap: 24px;
                     width: 100%;
+
+                    .listed-product-card{
+                        max-width: 180px;
+                    }
                 }
             }
         }

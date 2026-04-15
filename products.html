@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Ecostar</title>
 </head>
@@ -59,17 +60,46 @@
     <div class="page-container products-page">
 
         <!-- hero start -->
-        <div class="products-hero">
-            <img src="assets/images/img.jpg" alt="">
+        <div class="hero-swiper-container">
 
-            <div class="hero-text">
-                <span class="hero-title">Bütün Məhsullar</span>
-                <p class="hero-description">
-                    Biznesiniz üçün ekoloji cəhətdən təmiz və davamlı qablaşdırma həlləri.
-                    Təbiəti qoruyaraq
-                    brendinizi yüksəldin.
-                </p>
+            <div class="swiper productHeroSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="products-hero">
+                            <img src="assets/images/img.jpg" alt="">
+
+                            <div class="hero-text">
+                                <span class="hero-title">Bütün Məhsullar</span>
+                                <p class="hero-description">
+                                    Biznesiniz üçün ekoloji cəhətdən təmiz və davamlı qablaşdırma həlləri.
+                                    Təbiəti qoruyaraq
+                                    brendinizi yüksəldin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="products-hero">
+                            <img src="assets/images/img.jpg" alt="">
+
+                            <div class="hero-text">
+                                <span class="hero-title">Bütün Məhsullar</span>
+                                <p class="hero-description">
+                                    Biznesiniz üçün ekoloji cəhətdən təmiz və davamlı qablaşdırma həlləri.
+                                    Təbiəti qoruyaraq
+                                    brendinizi yüksəldin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
         <!-- hero end -->
 
@@ -179,24 +209,14 @@
 
                 <div class="filter-type">
 
-                    <div class="accordion filter-accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#range" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                <span class="type-title">Qiymət Aralığı (AZN)</span>
-                                <img src="assets/icons/accordion-arrow.svg" alt="">
-                            </button>
-                            <div id="range" class="accordion-collapse collapse show">
-                                <div class="accordion-body">
-                                    <input type="range" class="form-range" id="range1">
+                    <div class="min-input range-input">
+                        <label for="min">Qiymət (min)</label>
+                        <input type="text">
+                    </div>
 
-                                    <div class="ranges">
-                                        <span>0 ₼</span>
-                                        <span>50+ ₼</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="max-input range-input">
+                        <label for="max">Qiymət (max)</label>
+                        <input type="text">
                     </div>
 
                 </div>
@@ -582,6 +602,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/heroSwiper.js"></script>
+    <script src="assets/js/rangeInput.js"></script>
 </body>
 
 </html>
