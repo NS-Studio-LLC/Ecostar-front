@@ -452,7 +452,7 @@ footer .hours .hour-info .value-danger {
   background: #F0F4F2;
 }
 .header-input-div input {
-  flex-wrap: 1;
+  flex-grow: 1;
   background-color: transparent;
   color: #618972;
   font-size: 16px;
@@ -2494,7 +2494,7 @@ footer .hours .hour-info .value-danger {
   gap: 12px;
 }
 .product-details-page .product-details .product-meta .product-infos .other-details .detail-box img {
-  width: 20px;
+  max-width: 20px;
   height: auto;
 }
 .product-details-page .product-details .product-meta .product-infos .other-details .detail-box .detail-infos {
