@@ -389,6 +389,22 @@ footer .hours .hour-info .value-danger {
     text-align: center;
   }
 }
+.bottom-bar .developed {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.bottom-bar .developed img {
+  width: 24px;
+  height: 24px;
+}
+.bottom-bar .developed span {
+  color: #618972;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
 .bottom-bar-links {
   display: flex;
   align-items: center;
@@ -1991,8 +2007,8 @@ footer .hours .hour-info .value-danger {
   overflow: hidden;
   position: relative;
   background-color: red;
-  max-width: 400px;
-  max-height: 300px;
+  max-width: 500px;
+  max-height: 400px;
 }
 .homepage-container .homepage-hero .hero-image img {
   -o-object-fit: cover;
@@ -2217,7 +2233,11 @@ footer .hours .hour-info .value-danger {
   position: absolute;
   bottom: 32px;
   left: 32px;
-  width: 70%;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 16px;
 }
 .products-page .products-hero .hero-text .hero-title {
   color: #FFF;
@@ -2622,6 +2642,11 @@ footer .hours .hour-info .value-danger {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 16px;
 }
 .about-us-page-container .about-us-hero .hero-content .hero-title {
   color: #FFF;
@@ -3227,6 +3252,8 @@ footer .hours .hour-info .value-danger {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
 }
 .contact-us-page-container .contact-us .contact-form {
   display: flex;

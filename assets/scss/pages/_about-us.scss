@@ -32,6 +32,10 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            width: fit-content;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 12px;
+            border-radius: 16px;
 
             .hero-title {
                 color: #FFF;

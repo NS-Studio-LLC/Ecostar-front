@@ -31,6 +31,27 @@
         }
     }
 
+    .developed {
+
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        img{
+            width: 24px;
+            height: 24px;
+        }
+
+        span {
+            color: #618972;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+    }
+
     &-links {
         display: flex;
         align-items: center;
