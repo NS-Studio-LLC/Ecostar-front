@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .product-details-page {
     display: flex;
     flex-direction: column;
@@ -9,8 +11,16 @@
             display: flex;
             gap: 64px;
 
+            @include mq(tablet-landscape-up) {
+                flex-direction: column;
+            }
+
             .fotorama-container {
                 width: 60%;
+
+                @include mq(tablet-landscape-up) {
+                    width: 100%;
+                }
             }
 
             .product-infos {
@@ -18,6 +28,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+
+                @include mq(tablet-landscape-up) {
+                    width: 100%;
+                }
 
                 .stock {
                     display: flex;
@@ -246,10 +260,24 @@
             justify-content: space-between;
         }
 
-        .section-body{
+        .section-body {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 24px;
+        }
+    }
+
+    .popular-products {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 64px;
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
         }
     }
 

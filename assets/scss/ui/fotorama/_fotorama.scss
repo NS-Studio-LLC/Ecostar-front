@@ -21,9 +21,16 @@
             gap: 28px;
 
             .stage {
-                max-height: 400px;
                 border-radius: 12px;
                 overflow: hidden;
+
+                // .swiper-button-next {
+                //     background-color: red;
+                // }
+
+                // .swiper-button-prev{
+                //     background-color: green;
+                // }
 
                 .swiper-slide {
 
@@ -35,7 +42,7 @@
                 }
 
                 @include mq(tablet-portrait-up) {
-                    height: 339px;
+                    // height: 339px;
                 }
 
                 .pagination {
