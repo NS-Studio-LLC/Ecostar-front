@@ -44,6 +44,11 @@
             font-style: normal;
             font-weight: 500;
             line-height: 22.5px;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 90%;
         }
 
         .product-size {

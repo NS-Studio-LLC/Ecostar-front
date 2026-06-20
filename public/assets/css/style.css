@@ -876,6 +876,10 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 500;
   line-height: 22.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
 }
 .recently-product-card .product-infos .product-size {
   color: #618972;
@@ -1318,6 +1322,10 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
 }
 .similar-product-card .product-infos .product-name {
   color: #171717;
@@ -1325,6 +1333,10 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
 }
 .similar-product-card .card-footer {
   display: flex;
@@ -1377,6 +1389,10 @@ footer .hours .hour-info .value-danger {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
 }
 .feature-card .card-description {
   color: #475569;
@@ -1385,6 +1401,10 @@ footer .hours .hour-info .value-danger {
   font-weight: 500;
   line-height: 22.75px;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
 }
 
 .download-catalogue-card {

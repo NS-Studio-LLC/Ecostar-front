@@ -14,7 +14,7 @@
         max-width: 64px;
         max-height: 64px;
 
-        @include mq(tablet-portrait-up){
+        @include mq(tablet-portrait-up) {
             max-width: 32px;
             max-height: 32px;
         }
@@ -26,6 +26,11 @@
         font-style: normal;
         font-weight: 500;
         line-height: 28px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
     }
 
     .card-description {
@@ -35,5 +40,10 @@
         font-weight: 500;
         line-height: 22.75px;
         text-align: left;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
     }
 }
