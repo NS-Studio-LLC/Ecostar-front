@@ -23,26 +23,26 @@
             .stage {
                 border-radius: 12px;
                 overflow: hidden;
+                height: 100%;
+                height: 400px;
 
-                // .swiper-button-next {
-                //     background-color: red;
-                // }
-
-                // .swiper-button-prev{
-                //     background-color: green;
-                // }
+                .swiper {
+                    height: 100%;
+                }
 
                 .swiper-slide {
+                    height: 100%;
 
                     img {
-                        object-fit: contain;
+                        object-fit: cover;
                         width: 100%;
                         height: 100%;
+                        border-radius: 12px;
                     }
                 }
 
                 @include mq(tablet-portrait-up) {
-                    // height: 339px;
+                    height: 339px;
                 }
 
                 .pagination {
@@ -68,7 +68,7 @@
                 }
 
                 .fullscreen-open {
-                    background: rgba(0, 0, 0, 0.55);
+                    background: rgba(211, 203, 203, 0.55);
                     padding: 10px;
                     z-index: 999;
                     position: absolute;
@@ -97,7 +97,6 @@
                 .mainThumbsSwiper {
                     width: 100%;
 
-
                     .thumbs {
                         height: 100%;
 
@@ -115,20 +114,34 @@
                             font-weight: 600;
                             background-color: rgba(0, 0, 0, 0.6);
                             border-radius: 12px;
+
+                            @include mq(desktop-up) {
+                                font-size: 16px;
+                            }
+
+                            @include mq(lg-down) {
+                                font-size: 12px;
+                            }
                         }
 
                         .swiper-slide {
                             border-radius: 12px;
+                            overflow: hidden;
+
+                            @include mq(desktop-up) {
+                                height: 80px;
+                            }
+
+
+                            @include mq(lg-down) {
+                                height: 50px;
+                            }
 
                         }
 
                         &-img {
                             border-radius: 12px;
-                            height: 140px;
-
-                            @include mq(special) {
-                                height: 120px;
-                            }
+                            height: 100px;
 
                             @include mq(tablet-landscape-up) {
                                 height: 100px;
@@ -178,7 +191,7 @@
         background-color: black;
 
         .fullscreen-close {
-            background: rgba(0, 0, 0, 0.55);
+            background: rgba(211, 203, 203, 0.55);
             padding: 10px;
             z-index: 999;
             position: absolute;

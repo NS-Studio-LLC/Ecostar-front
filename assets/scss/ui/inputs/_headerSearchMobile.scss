@@ -18,12 +18,22 @@
         display: none;
     }
 
+    @include mq(phone-sm) {
+        width: 30px;
+        height: 30px;
+    }
+
     .search-icon {
         width: 20px;
         height: 20px;
         flex: 0 0 auto;
         position: relative;
         z-index: 2;
+
+        @include mq(phone-sm) {
+            width: 15px;
+            height: 15px;
+        }
     }
 
     .search-input {
@@ -39,6 +49,10 @@
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.2s ease;
+
+        @include mq(phone-sm) {
+            font-size: 12px;
+        }
     }
 
     &.is-open {
