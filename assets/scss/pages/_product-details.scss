@@ -150,6 +150,11 @@
                             height: auto;
                         }
 
+                        svg {
+                            max-width: 20px;
+                            height: auto;
+                        }
+
                         .detail-infos {
                             display: flex;
                             flex-direction: column;
@@ -200,6 +205,10 @@
             gap: 40px;
             margin-top: 32px;
 
+            @include mq(tablet-portrait-up) {
+                flex-direction: column;
+            }
+
             .about-product {
                 width: 60%;
                 color: #525252;
@@ -207,6 +216,10 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 24px;
+
+                @include mq(tablet-portrait-up) {
+                    width: 100%;
+                }
             }
 
             .tecnical-parameters {
@@ -218,6 +231,10 @@
                 border: 1px solid #F0F4F2;
                 background: #FFF;
                 padding: 24px;
+
+                @include mq(tablet-portrait-up) {
+                    width: 100%;
+                }
 
                 .parameter {
                     border-bottom: 1px solid #F0F4F2;
